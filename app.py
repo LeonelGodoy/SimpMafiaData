@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 import json
 import os
 import requests
@@ -11,7 +11,7 @@ def hello_world():  # put application's code here
     return 'SIMP MAFIA TEST'
 
 
-@app.route("/get-data/")
+@app.route("/get-data/", methods=['GET'])
 def get_data():
     bearer_token = os.environ['MY_BEARER_TOKEN']
 
@@ -33,9 +33,11 @@ def get_data():
         # data output
         dicts[streamer] = len(response['data'])
 
-    data = json.dumps(dicts)
+    # data = json.dumps(dicts)
+    data = jsonify(dicts)
+    data.headers.add('Access-Control-Allow-Origin', '*')
 
-    return render_template("index.html", data=data,)
+    return data
 
 
 
