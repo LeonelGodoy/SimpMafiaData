@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import json
 import os
 import requests
@@ -34,7 +34,8 @@ def get_data():
         dicts[streamer] = len(response['data'])
 
     data = json.dumps(dicts)
-    return data
+
+    return render_template("index.html", data=data,)
 
 
 
