@@ -11,30 +11,30 @@ def hello_world():  # put application's code here
     return 'SIMP MAFIA TEST'
 
 
-@app.route("/get-tweets/", methods=['GET'])
-def get_tweet():
-    bearer_token = os.environ['MY_BEARER_TOKEN']
-    client = tweepy.Client(bearer_token=bearer_token)
-    cm_tweet = client.get_users_tweets(id='930662549812600832')
-    tweet1 = str(cm_tweet[0][0].id)
-    tweet2 = str(cm_tweet[0][1].id)
-    tweet3 = str(cm_tweet[0][2].id)
-    lilb_tweet = client.get_users_tweets(id='37836873')
-    tweet4 = str(lilb_tweet[0][0].id)
-    jennie_tweet = client.get_users_tweets(id='3243685400')
-    tweet5 = str(jennie_tweet[0][0].id)
-    print(tweet1)
-
-    tweets = {'CM Tweet 1': tweet1,
-              'CM Tweet 2': tweet2,
-              'CM Tweet 3': tweet3,
-              'Lil B Tweet': tweet4,
-              'Jennie Tweet': tweet5
-              }
-    data = jsonify(tweets)
-    data.headers.add('Access-Control-Allow-Origin', '*')
-
-    return data
+# @app.route("/get-tweets/", methods=['GET'])
+# def get_tweet():
+#     bearer_token = os.environ['MY_BEARER_TOKEN']
+#     client = tweepy.Client(bearer_token=bearer_token)
+#     cm_tweet = client.get_users_tweets(id='930662549812600832')
+#     tweet1 = str(cm_tweet[0][0].id)
+#     tweet2 = str(cm_tweet[0][1].id)
+#     tweet3 = str(cm_tweet[0][2].id)
+#     lilb_tweet = client.get_users_tweets(id='37836873')
+#     tweet4 = str(lilb_tweet[0][0].id)
+#     jennie_tweet = client.get_users_tweets(id='3243685400')
+#     tweet5 = str(jennie_tweet[0][0].id)
+#     print(tweet1)
+#
+#     tweets = {'CM Tweet 1': tweet1,
+#               'CM Tweet 2': tweet2,
+#               'CM Tweet 3': tweet3,
+#               'Lil B Tweet': tweet4,
+#               'Jennie Tweet': tweet5
+#               }
+#     data = jsonify(tweets)
+#     data.headers.add('Access-Control-Allow-Origin', '*')
+#
+#     return data
 
 
 @app.route("/get-data/", methods=['GET'])
