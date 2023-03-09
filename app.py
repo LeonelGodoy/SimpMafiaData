@@ -39,13 +39,14 @@ def hello_world():  # put application's code here
 
 @app.route("/get-data/", methods=['GET'])
 def get_data():
-    client_id = os.environ['MY_SECRET_SAUCE']
-    client_secret = os.environ['MY_SECRET_ID']
+    client_id = os.environ['MY_CLIENT_ID']
+    client_secret = os.environ['MY_CLIENT_SECRET']
     headers = {
         'Client-ID': client_id,
         'client_secret': client_secret,
         "grant_type": 'client_credentials',
-        'Authorization': 'Bearer ' + os.environ['MY_SECRET_TOKEN']
+        'Authorization': 'Bearer ' + os.environ['MY_AUTHORIZATION']
+        # https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=YOURAPPCLIENTID&redirect_uri=http%3A%2F%2Flocalhost&scope=channel%3Amanage%3Aredemptions+channel%3Aread%3Aredemptions+channel%3Aread%3Asubscriptions+moderator%3Aread%3Achatters+channel%3Aread%3Ahype_train+bits%3Aread
     }
     streamers = ['cm_nyc_tv', 'gamerpool474_ph', 'snoozefighting', 'scentless__apprentice',
                  'mattnguyen', 'strawberriemlk', 'leyopan', 'camelul', 'replaisment']
