@@ -20,7 +20,7 @@ def get_data():
         'Authorization': 'Bearer ' + os.environ['MY_AUTHORIZATION']
     }
     streamers = ['cm_nyc_tv', 'gamerpool474_ph', 'snoozefighting', 'scentless__apprentice',
-                 'mattnguyen', 'chato__', 'chefiejay', 'camelul']
+                 'mattnguyen', 'chato__', 'chefiejay', 'camelul', 'crispyjenny']
     dicts = {}
     for streamer in streamers:
         url = "https://api.twitch.tv/helix/streams?user_login=" + streamer
