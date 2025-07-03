@@ -19,7 +19,7 @@ def get_data():
         "grant_type": 'client_credentials',
         'Authorization': 'Bearer ' + os.environ['MY_AUTHORIZATION']
     }
-    streamers = ['cm_nyc_tv', 'snoozefighting', 'scentless__apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
+    streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
                  'mattnguyen', 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM', 'FaruIRL', 'Saxymansam', 'Domorobogato']
     dicts = {}
     for streamer in streamers:
