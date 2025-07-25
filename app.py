@@ -53,7 +53,7 @@ def streamer():
     # streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'crispyjenny']
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
                  'mattnguyen', 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
-                 'FaruIRL', 'Domorobogato']
+                 'FaruIRL', 'Domorobogato', 'babubird']
     dicts = {}
 
     # Create the URL query string by joining streamer names
