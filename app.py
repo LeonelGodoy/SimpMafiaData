@@ -47,7 +47,7 @@ def streamer():
         'Client-ID': client_id,
         'client_secret': client_secret,
         "grant_type": 'client_credentials',
-        'Authorization': 'Bearer ' + 'nmiqhqox239vdkaekutrtughnhnm2h'
+        'Authorization': 'Bearer ' + os.environ['MY_AUTHORIZATION']
     }
     # A list of up to 100 streamer logins
     # streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'crispyjenny']
