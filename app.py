@@ -50,10 +50,9 @@ def streamer():
         'Authorization': 'Bearer ' + os.environ['MY_AUTHORIZATION']
     }
     # A list of up to 100 streamer logins
-    # streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'crispyjenny']
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
-                 'mattnguyen', 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
-                 'FaruIRL', 'Domorobogato', 'babubird']
+                 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
+                 'FaruIRL', 'Domorobogato', 'babubird', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess']
     dicts = {}
 
     # Create the URL query string by joining streamer names
