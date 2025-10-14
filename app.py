@@ -52,7 +52,7 @@ def streamer():
     # A list of up to 100 streamer logins
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
                  'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
-                 'FaruIRL', 'Domorobogato', 'babubird', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess']
+                 'FaruIRL', 'Domorobogato', 'babubird', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess', 'ulumaika']
     dicts = {}
 
     # Create the URL query string by joining streamer names
