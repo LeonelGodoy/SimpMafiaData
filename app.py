@@ -128,7 +128,7 @@ def streamer():
     }
     # A list of up to 100 streamer logins
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
-                 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
+                 'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM', 'salamigal',
                  'FaruIRL', 'Domorobogato', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess', 'ulumaika', 'tikitacotony', 'Ginasno1', 'aznricecakes', 'Koi_ana', 'Mysterium0619', 'prettygoodgaming_', 'cooksux']
     dicts = {}
 
