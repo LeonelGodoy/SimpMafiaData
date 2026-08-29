@@ -87,7 +87,7 @@ def get_follower_counts2():
 
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
                  'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM',
-                 'FaruIRL', 'Domorobogato', 'babubird', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess',
+                 'FaruIRL', 'Domorobogato', 'nessalpaca', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess',
                  'ulumaika', 'tikitacotony', 'KozyBean', 'aznricecakes', 'Koi_ana', 'Mysterium0619']
 
     # --- STEP 1: Get all User IDs in ONE request (Insta-method style) ---
@@ -129,7 +129,7 @@ def streamer():
     # A list of up to 100 streamer logins
     streamers = ['cm_nyc', 'snoozefighting', 'scentless_apprentice', 'Rinzson', 'extrahotchicken', 'clearjoker',
                  'chato__', 'keokeofofeo', 'crispyjenny', 'mommygivememilk', 'philski', 'sattamxSAM', 'salamigal',
-                 'FaruIRL', 'Domorobogato', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess', 'ulumaika', 'tikitacotony', 'Ginasno1', 'aznricecakes', 'Koi_ana', 'Mysterium0619', 'prettygoodgaming_',  'cooksux']
+                 'nessalpaca', 'Domorobogato', 'stinkycarnival', 'commandercooder', 'hazelbunni', 'luxcess', 'ulumaika', 'tikitacotony', 'Ginasno1', 'aznricecakes', 'Koi_ana', 'Mysterium0619', 'prettygoodgaming_',  'cooksux']
     dicts = {}
 
     # Create the URL query string by joining streamer names
